@@ -1,0 +1,35 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Secrets & local env
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Logs & local backups
+logs/
+*.log
+*.bak
+
+# Local model / heavy artifacts
+backend/docker/embedding/bge-large-zh-v1.5/
+
+# Raw evaluation outputs (summaries & datasets are committed)
+backend/eval/*_results.json
+backend/eval/eval_results*.json
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# OS
+.DS_Store
+Thumbs.db
